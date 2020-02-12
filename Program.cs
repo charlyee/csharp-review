@@ -6,17 +6,33 @@ namespace C_Review
     {
         static void Main(string[] args)
         {
-            int x = 35; // Assigning an int!
-            Console.WriteLine("Hello Warren!"+x);
+            // For a method to execute we must call it by name.
+            // MyMethod();
 
+            // Let's try an array!
+            int[] myarray = new int[5] { 3, 4, 5, 6, 7 };
+            myarray[0] = 2; // Update value by index. // ARRAYS START AT ZERO!
+            Console.WriteLine( myarray[0] ); // Output a value by index.
+        }
+
+        // Let's try making a method.
+        static void MyMethod()
+        {
+            int x = 35; // Assigning an int!
+            Console.WriteLine("Hello Warren!"+x); // Print something to the commandline.
+
+            // Let's try an if statement!
             if ( x < 30 ) {
                 Console.WriteLine( "X is less than thirty!" );
+            // We can have many else ifs.
             } else if ( x == 30 ) {
                 Console.WriteLine( "X is thirty!" );
+            // We can only have 1 "if" and 1 "else" per chain.
             } else {
                 Console.WriteLine( "X is greater than Thirty!" );
             }
 
+            // Let's try a switch statement!
             int a = 2;
             switch ( a ) {
                 case 1 :
